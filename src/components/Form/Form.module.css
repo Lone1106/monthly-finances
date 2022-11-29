@@ -1,0 +1,45 @@
+.section {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form input,
+.form select {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    width: 100px;
+}
+
+.form button {
+    padding: 1rem;
+    width: 100px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: var(--gradient);
+    color: var(--text);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
