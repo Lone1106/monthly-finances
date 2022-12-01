@@ -11,13 +11,10 @@ main {
 .main-container {
   width: 80%;
   height: 800px;
-  border: 2px solid transparent;
-  border-image: var(--gradient);
-  padding: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 8rem;
   justify-content: center;
   align-items: center;
 }
@@ -25,5 +22,5 @@ main {
 h1 {
   font-size: 3.8rem;
   color: var(--accent-2);
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.4rem;
 }

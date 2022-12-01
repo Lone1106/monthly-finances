@@ -14,21 +14,42 @@
 .wrapper {
     display: flex;
     gap: 2rem;
-    justify-content: flex-start;
+    margin-top: 2rem;
+    justify-content: space-between;
     align-items: center;
 }
 
-.form label {
+.label {
     display: block;
     margin-bottom: 1rem;
 }
 
-.form input,
-.form select {
+.input {
     display: block;
-    padding: 0.5rem 1rem;
-    margin-bottom: 2rem;
-    width: 100px;
+    padding: 1rem;
+    width: 100%;
+    background: none;
+    border: 1px solid var(--accent-1);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 1.4rem;
+    transition: border 0.2s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--accent-2);
+}
+
+.input:focus:invalid {
+    border-color: red;
+}
+
+.radioGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .form button {
@@ -42,4 +63,9 @@
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: box-shadow 0.3s;
+}
+
+.form button:hover {
+    box-shadow: 0 0 5px 2px var(--accent-1);
 }
