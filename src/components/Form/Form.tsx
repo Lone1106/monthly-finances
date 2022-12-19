@@ -2,14 +2,17 @@ import React, { useRef, useState } from "react";
 
 import classes from "./Form.module.css";
 
-const Form: React.FC = () => {
-    const spendingName = useRef();
-    const amount = useRef();
-    const [radio, setRadio] = useState();
+// interface FormProps {
+//     addItem:
+// }
 
-    const getFormData = (e) => {
+const Form = () => {
+    const spendingName = useRef<HTMLInputElement>(null);
+    const amount = useRef<HTMLInputElement>(null);
+    const [radio, setRadio] = useState<number>();
+
+    const getFormData = (e: React.SyntheticEvent) => {
         e.preventDefault();
-        // HANDLE FORM DATA
     };
 
     return (
@@ -53,7 +56,7 @@ const Form: React.FC = () => {
                             onChange={() => setRadio(1)}
                         />
                     </div>
-                    <button type="Submit">Add</button>
+                    <button type="submit">Add</button>
                 </div>
             </form>
         </section>

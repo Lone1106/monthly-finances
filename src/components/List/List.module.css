@@ -3,4 +3,18 @@
     height: 100%;
     grid-row: 2 / -1;
     grid-column: 1 / 2;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.list ul {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.list ul li {
+    border-bottom: 1px solid var(--accent-1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
